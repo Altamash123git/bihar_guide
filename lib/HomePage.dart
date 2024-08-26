@@ -8,8 +8,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 
-class Homepage extends StatelessWidget{
+class Homepage extends StatefulWidget{
 
+  @override
+  State<Homepage> createState() => _HomepageState();
+}
+
+class _HomepageState extends State<Homepage> {
   var cities=[
     {
       "name":"Patna",
@@ -38,10 +43,8 @@ class Homepage extends StatelessWidget{
     },
 
   ];
+
   var Pages=[Patna(),muzaffarpur(),Nalanda(),Bodhgaya()];
-
-
-
 
   @override
   Widget build(BuildContext context) {
